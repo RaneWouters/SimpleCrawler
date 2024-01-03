@@ -2,7 +2,7 @@ import os
 import numpy as np
 import PIL.Image as Image
 
-imgs_path = './image'
+imgs_path = './images'
 
 img_list = os.listdir(imgs_path)
 for img_name in img_list:

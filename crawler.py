@@ -1,7 +1,8 @@
-import re
 import os
+import random
 import requests
 import tqdm
+import time
 
 header = {
     'User-Agent':
@@ -18,12 +19,13 @@ def getImg(url, idx, path):
 
 search = input("请输入搜索内容：")
 number = int(input("请输入需求数量："))
-path = 'image/'
+path = './images/'
 if not os.path.exists(path):
     os.makedirs(path)
 
 bar = tqdm.tqdm(total=number)
 page = 0
+
 while (True):
     if number == 0:
         break
@@ -75,5 +77,6 @@ while (True):
         number -= 1
         if number == 0:
             break
+        time.sleep(random.random() * 3)
     page += 1
 print("\nfinish!")

@@ -2,6 +2,7 @@
 # Author: Tingrui Guo
 
 set -e
+export LANG=en_US.UTF-8
 
 eval "$(conda shell.bash hook)"
 conda activate pnp
