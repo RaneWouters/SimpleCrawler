@@ -4,9 +4,9 @@ A web crawler to get the internet images from baidu.
 
 
 # How to run
-'''
+```
 ./run.sh
-'''
+```
 
 # files description
 ## crawler.py
